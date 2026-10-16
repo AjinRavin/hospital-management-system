@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B031C264-6CAB-466A-9A4A-82FD8778C399}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hms</RootNamespace>
+    <AssemblyName>hms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_findings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="add_findings.Designer.cs">
+      <DependentUpon>add_findings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_patients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="add_patients.Designer.cs">
+      <DependentUpon>add_patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_add-receptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_add-receptionist.Designer.cs">
+      <DependentUpon>admin_add-receptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_add_doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_add_doctor.Designer.cs">
+      <DependentUpon>admin_add_doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_delete_doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_delete_doctor.Designer.cs">
+      <DependentUpon>admin_delete_doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_delete_receptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_delete_receptionist.Designer.cs">
+      <DependentUpon>admin_delete_receptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_home.Designer.cs">
+      <DependentUpon>admin_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_update_doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_update_doctor.Designer.cs">
+      <DependentUpon>admin_update_doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_update_receptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_update_receptionist.Designer.cs">
+      <DependentUpon>admin_update_receptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_view_doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_view_doctor.Designer.cs">
+      <DependentUpon>admin_view_doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_view_receptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_view_receptionist.Designer.cs">
+      <DependentUpon>admin_view_receptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="book_appointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="book_appointments.Designer.cs">
+      <DependentUpon>book_appointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctor_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctor_admin.Designer.cs">
+      <DependentUpon>doctor_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctor_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctor_home.Designer.cs">
+      <DependentUpon>doctor_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generate_bill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="generate_bill.Designer.cs">
+      <DependentUpon>generate_bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patient_history.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="patient_history.Designer.cs">
+      <DependentUpon>patient_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prescribe_medicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="prescribe_medicine.Designer.cs">
+      <DependentUpon>prescribe_medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receptionist_add_appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist_add_appointment.Designer.cs">
+      <DependentUpon>receptionist_add_appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist_admin.Designer.cs">
+      <DependentUpon>receptionist_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist_home.Designer.cs">
+      <DependentUpon>receptionist_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_patient_details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="search_patient_details.Designer.cs">
+      <DependentUpon>search_patient_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewappointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewappointments.Designer.cs">
+      <DependentUpon>viewappointments.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_findings.resx">
+      <DependentUpon>add_findings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_patients.resx">
+      <DependentUpon>add_patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_add-receptionist.resx">
+      <DependentUpon>admin_add-receptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_add_doctor.resx">
+      <DependentUpon>admin_add_doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_delete_doctor.resx">
+      <DependentUpon>admin_delete_doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_delete_receptionist.resx">
+      <DependentUpon>admin_delete_receptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_home.resx">
+      <DependentUpon>admin_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_update_doctor.resx">
+      <DependentUpon>admin_update_doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_update_receptionist.resx">
+      <DependentUpon>admin_update_receptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_view_doctor.resx">
+      <DependentUpon>admin_view_doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_view_receptionist.resx">
+      <DependentUpon>admin_view_receptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book_appointments.resx">
+      <DependentUpon>book_appointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctor_admin.resx">
+      <DependentUpon>doctor_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctor_home.resx">
+      <DependentUpon>doctor_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generate_bill.resx">
+      <DependentUpon>generate_bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patient_history.resx">
+      <DependentUpon>patient_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prescribe_medicine.resx">
+      <DependentUpon>prescribe_medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="receptionist_add_appointment.resx">
+      <DependentUpon>receptionist_add_appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist_admin.resx">
+      <DependentUpon>receptionist_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist_home.resx">
+      <DependentUpon>receptionist_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_patient_details.resx">
+      <DependentUpon>search_patient_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewappointments.resx">
+      <DependentUpon>viewappointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-09-09 at 12.22.35 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Sep 9, 2026, 02_24_00 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Sep 9, 2026, 02_35_02 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Sep 9, 2026, 02_35_02 PM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Sep 11, 2026, 11_19_06 AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Sep 11, 2026, 11_23_35 AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Sep 11, 2026, 11_52_19 AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Sep 11, 2026, 12_09_00 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Sep 11, 2026, 12_09_00 PM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-doctor-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surgeon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surgeon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\age.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall-clocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-counseling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%291.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnific_hospital-illustration_rl1Rgqixtc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnific_hospital-illustration_rl1Rgqixtc1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
