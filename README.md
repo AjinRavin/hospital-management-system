@@ -34,28 +34,22 @@ The application provides separate login access and workflows for administrators,
 ## 📸 Application Screenshots
 
 ### 🔐 Login Page
-
 ![Login Page](login.png)
 
 ### 🛡️ Admin Dashboard
-
-![Admin Dashboard](admin-dashboard.png)
+![Admin Dashboard](admin_dashboard.png)
 
 ### 👨‍⚕️ Doctor Dashboard
-
-![Doctor Dashboard](doctor-dashboard.png)
+![Doctor Dashboard](doctor_dashboard.png)
 
 ### 🧑‍💼 Receptionist Dashboard
-
-![Receptionist Dashboard](receptionist-dashboard.png)
+![Receptionist Dashboard](receptionist_dashboard.png)
 
 ### 🩺 Manage Doctors
-
-![Manage Doctors](manage-doctor.png)
+![Manage Doctors](manage_doctor.png)
 
 ### 👥 Manage Receptionists
-
-![Manage Receptionists](manage-receptionist.png)
+![Manage Receptionists](manage_receptionist.png)
 
 ## 🗄️ Database
 
